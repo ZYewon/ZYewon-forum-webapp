@@ -1,0 +1,15 @@
+@mixin resH-to($media) {
+  @if $media == small-screens {
+    @media only screen and (max-height:$height-small){
+     @content
+    }
+  }@else if($media == medium-screens){
+    @media only screen and (min-height:$height-small + 1) and (max-height: $height-media){
+      @content
+    }
+  }@else if($media == big-screens){
+    @media only screen and (min-height:$height-media + 1){
+      @content
+    }
+  }
+}
