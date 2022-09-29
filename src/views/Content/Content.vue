@@ -57,7 +57,9 @@
           ref="loadingRef"
           style="text-align: center"
         ></Loading>
-        <div v-if="isEnd" class="info">没有更多了~~~</div>
+        <div v-if="isEnd && commentsList.length !== 0" class="info">
+          没有更多了~~~
+        </div>
         <!--      <div class="loading" v-if="loading">-->
         <!--        <mt-spinner type="fading-circle"></mt-spinner>加载中...-->
         <!--      </div>-->

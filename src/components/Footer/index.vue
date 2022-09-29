@@ -6,7 +6,7 @@
       to="/msg/reply"
       name="msg"
       icon="chat-o"
-      :badge="num ? num.message : null"
+      :badge="num ? (num.message ? num.message : null) : null"
     >
       消息
     </tabbar-item>

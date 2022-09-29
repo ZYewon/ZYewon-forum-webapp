@@ -123,7 +123,7 @@ const uploadChange = async (e: any) => {
   fm.append("file", file);
   const imgSrc = await uploadImg(fm);
   if (imgSrc.code === 200) {
-    setForm.pic = baseURL + "/" + imgSrc.imgUrl;
+    setForm.pic = imgSrc.imgUrl;
   } else {
     Toast.fail({
       message: "图片预览失败",

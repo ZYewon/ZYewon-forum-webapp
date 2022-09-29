@@ -19,7 +19,7 @@
     </div>
     <div class="list-body" @click="goDetail(item._id)">
       <div class="info">
-        <span v-html="escapeHtml(item.content)"> </span>
+        <span v-html="item.content"> </span>
         <!--        <img src="../../assets/vue.svg" class="fmt" />-->
       </div>
     </div>
